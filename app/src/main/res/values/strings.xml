@@ -1,0 +1,40 @@
+<resources>
+    <string name="ddd_api_key">AIzaSyBShNZA1A
+        -uH4h31MGromtilf_
+        NCCfnyHo</string>
+
+    <string name="register"><b><u>Register</u></b></string>
+    <string name="inv"><u>View Invoice</u></string>
+    <string name="skip"><b>SKIP</b></string>
+    <string name="powerd"><b>Powered by ELLOCART</b></string>
+    <string name="thankyou"><b>Thank You for Shopping</b></string>
+    <string name="shop"><b>Store Details</b></string>
+    <string name="review"><b>Review</b></string>
+    <string name="clear_cart"><b>Do you want to clear cart ?</b></string>
+    <string name="delete"><b>Do you want to delete ?</b></string>
+
+    <string name="delivery"><b>Delivery Tip</b></string>
+    <string name="carddetails"><b>Cart Details</b></string>
+    <string name="addrdetails"><b>Delivery Details</b></string>
+    <string name="app_name">ElloCart</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_maps">Map</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="viewall"><b><u>View all</u></b></string>
+    <string name="newviewall">VIEW ALL</string>
+
+    <string name="youAreNotUpdatedTitle">Update Available</string>
+    <string name="youAreNotUpdatedMessage">A new version of ElloCart is available. Please update to version\s</string>
+    <string name="youAreNotUpdatedMessage1"> now</string>
+    <string name="update">Update</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
+
+<!--    <string name="Mobile_number"><b>Enter 4 Digit code sent to your Registered Mobile Number</b></string>-->
+
+    <string name="OTP"><b>Resend OTP</b></string>
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+
+        android:icon="@drawable/home_tab_nav"
+        />
+    <item
+        android:id="@+id/order"
+        android:title="Ello Rooms"
+        android:icon="@drawable/ellorooms_tab_nav"
+        />
+
+    <item
+        android:id="@+id/action_add"
+        android:enabled="true"
+        android:title=" "
+
+        app:showAsAction="ifRoom"
+        app:itemIconSize="80px"/>
+    <item
+        android:id="@+id/service"
+        android:title="Ello Services"
+        android:icon="@drawable/servicestab_nav"
+        />
+
+    <item
+        android:id="@+id/b2b"
+        android:title="All Over India"
+        android:icon="@drawable/allindiatabnav"
+        />
+</menu>

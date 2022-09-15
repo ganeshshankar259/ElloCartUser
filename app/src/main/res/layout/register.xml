@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageback"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="36dp"
+        android:padding="10dp"
+        android:src="@drawable/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="260dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/logo_new_3x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:textSize="13dp"
+            android:text="Fullname"
+            android:fontFamily="@font/segoeuibold"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:id="@+id/storename"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:drawablePadding="10dp"
+            android:maxLines="1"
+            android:hint="Fullname"
+            android:background="@color/bgedittext"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:paddingLeft="10px"
+            android:textSize="15dp"
+            android:fontFamily="@font/segoeui"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:textSize="13dp"
+            android:text="Email"
+            android:fontFamily="@font/segoeuibold"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:drawablePadding="10dp"
+            android:maxLines="1"
+            android:hint="Email"
+            android:background="@color/bgedittext"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:paddingLeft="10px"
+            android:textSize="15dp"
+
+            android:fontFamily="@font/segoeui"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:textSize="13dp"
+            android:text="Mobile number"
+            android:fontFamily="@font/segoeuibold"
+            android:textColor="@color/black"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#F4F4F8"
+            >
+
+            <EditText
+                android:id="@+id/editextphn"
+                android:layout_width="184dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="7dp"
+                android:hint="Mobile number"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toEndOf="@+id/code91"
+                android:background="@null"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:maxLines="1"
+                android:maxLength="10"/>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/india_flag" />
+
+            <TextView
+                android:id="@+id/code91"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toEndOf="@+id/img"
+                android:gravity="center"
+                android:maxLength="10"
+                android:text="+91"
+                android:textSize="15dp"
+                android:inputType="number"
+                android:fontFamily="@font/segoeui"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/refernumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="10dp"
+            android:visibility="gone"
+            android:maxLines="1"
+            android:hint="Referral Mobilenumber(Optional)"
+            android:background="@color/bgedittext"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:paddingLeft="10px"
+            android:textSize="15dp"
+            android:fontFamily="@font/segoeui"/>
+
+        <TextView
+            android:id="@+id/privacytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:text="By Register, you agree to Ellocart Terms of Use and Privacy Policy."
+            android:textColorHighlight="@color/black"
+            android:textColorLink="#0000EE"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="30dp"
+            android:layout_gravity="center"
+            android:text="Register"
+            android:background="@drawable/btncornor"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:fontFamily="@font/segoeuibold"
+            />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

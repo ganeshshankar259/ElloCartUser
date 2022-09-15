@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "261942152204",
+    "project_id": "ellocart-14adc",
+    "storage_bucket": "ellocart-14adc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261942152204:android:5d5a95892b5cd3b2787229",
+        "android_client_info": {
+          "package_name": "com.ellocart.sunraise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261942152204-v53jcod28r8a0p9vefas0fkmfsq1f7su.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5ckFBsBeCHgMmAB8YDGfcvLo6UzIuSKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "261942152204-v53jcod28r8a0p9vefas0fkmfsq1f7su.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "261942152204-brn0pf1l6sp092f1h86cfksib8a04l59.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ellocart"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

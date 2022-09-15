@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    >
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/segoeuibold"
+            android:gravity="center"
+            android:text="Do you want to Logout?"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    >
+
+    <Button
+        android:id="@+id/cancle"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_margin="30dp"
+        android:backgroundTint="#ff00"
+        android:fontFamily="@font/segoeuibold"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:layout_marginTop="20dp"
+android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/segoeuibold"
+
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_logout" />
+
+
+</RelativeLayout>

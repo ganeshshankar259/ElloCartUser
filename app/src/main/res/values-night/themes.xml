@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ElloCartUser" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/yellow</item>
+        <item name="colorPrimaryVariant">@color/yellow</item>
+        <!--        <item name="colorOnPrimary">@color/black</item>-->
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="actionBarTheme">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="bgstyle">
+        <item name="colorControlNormal">@color/bgedittext</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+<!--    <style name="srp_button" parent="@android:style/Widget.Button">-->
+<!--        <item name="android:background">@drawable/dummy</item>-->
+<!--    </style>-->
+
+
+<!--    <style name="ProgressBar" parent="Base.Widget.AppCompat.ProgressBar">-->
+<!--        <item name="android:colorAccent">@color/yellow</item>-->
+<!--    </style>-->
+
+    <!--    <style name="btn" parent="TextAppearance.MaterialComponents.Button">-->
+    <!--        <item name="android:enabled">@color/black</item>-->
+    <!--    </style>-->
+
+
+    <style name="boldStyle">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+</resources>

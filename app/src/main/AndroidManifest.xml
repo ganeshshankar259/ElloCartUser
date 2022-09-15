@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ellocartuser">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_new_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_new_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ElloCartUser"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".FilterPage"
+            android:exported="false" />
+        <activity
+            android:name=".ElloRoomListPage"
+            android:exported="false" />
+        <activity
+            android:name=".ElloDetailPage"
+            android:exported="false" />
+        <activity
+            android:name=".EmptyOfferPage"
+            android:exported="false" />
+        <activity
+            android:name=".RoomsNew.room_info.RoomInfo"
+            android:exported="false" />
+        <activity
+            android:name=".RoomsNew.MyRoomsList"
+            android:exported="false" />
+        <activity
+            android:name=".RoomsNew.RoomCartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoomsNew.RoomDetailInfoActivtiy"
+            android:exported="false" />
+        <activity
+            android:name=".RoomsNew.RoomDetailingListActivtiy"
+            android:exported="false" />
+        <activity
+            android:name=".RoomsNew.RoomsListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tutions.Tutions_Base"
+            android:exported="false" />
+        <activity
+            android:name=".rooms_old.Rooms_Payment_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ellorooms_new.ElloRoomListPage"
+            android:exported="false" />
+        <activity
+            android:name=".ellorooms_new.FilterPage"
+            android:exported="false" />
+        <activity
+            android:name=".ellorooms_new.ElloDetailPage"
+            android:exported="false" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity android:name=".cart.ThankyoupageAllOverIndia" />
+        <activity android:name=".cart.AddAddressAlloverIndia" />
+        <activity
+            android:name=".setting.MyProfileActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".servicesscreens.MyServicesPageActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".servicesscreens.PostDetailedPage"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".servicesscreens.category.ServiceCategoryPage"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".servicesscreens.AddService"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".agentscreens.SellerDisplayScreen"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".agentscreens.AgentMainScreen"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".agentscreens.AgentRegister"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".servicesscreens.Servicesdisplaylist"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".servicesscreens.SubscritionScreen"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".servicesscreens.SubCategoryItems"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cart.OfferScreenActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.notification.NotificationScreen"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".orders.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".orders.ReviewScreen"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".orders.DeliveryReviewScreen"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cart.PickUpDetailScreen"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cart.Checkout"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".intro.IntroActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".utils.WebViewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".cart.ThankyouScreen"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cart.AddAddress"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cart.AddAddressFriendScreen"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cart.CheckoutNext"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.mainscreen.HomeScreen"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setting.Account"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Register"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OtpScreen"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.onesignal.NotificationServiceExtension"
+            android:value="com.company.NotificationServiceExtension" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_04Ps1XLhcdWIVA" />
+    </application>
+
+</manifest>

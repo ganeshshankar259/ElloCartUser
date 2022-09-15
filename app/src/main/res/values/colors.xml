@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_300">#F44336</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="green">#8BC34A</color>
+    <color name="green1">#2FC605</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="milkwhite">#FFFEF7</color>
+    <color name="bggray">#E5E5EA</color>
+    <color name="yellow"> #ff9e29</color>
+    <color name="yellow1"> #FFBA19</color>
+<!-- <color name="yellow">#ff9e29</color>-->
+    <color name="yellowselect">#FFBA19</color>
+    <color name="lightgray">#555555</color>
+    <color name="darkblue">#002768</color>
+    <color name="bluee">#ff9e29</color>
+    <color name="grey_font1">#EAE9E9</color>
+    <color name="ellolite1">#E8FFEBBC</color>
+<!--    <color name="bgedittext">#F2F2F7</color>-->
+<!--    <color name="gray">#B5B2B0</color>-->
+
+    <color name="bgedittext">#fff</color>
+    <color name="bgedittextnew">#F2F2F7</color>
+    <color name="gray">#B5B2B0</color>
+
+    <color name="grayshimmer">#B5B2B0</color>
+
+    <color name="gradient_start_color">#4c84ff</color>
+
+    <color name="intro_title_color">#000000</color>
+
+    <color name="savepric">#088426</color>
+    <color name="saveprice">#000000</color>
+
+    <color name="disabled">#C6C4C4</color>
+    <color name="matgreen">#008000</color>
+    <color name="lightred">#ED1B25</color>
+    <color name="red">#ED1B25</color>
+    <color name="lightskyblue">#6CBDE2</color>
+    <color name="lighgrey">#EFEEF4</color>
+    <color name="purple_200">#FFBA19</color>
+    <color name="purple_700">#B6B3B1</color>
+    <color name="grey_font"> #ff9e9e9e</color>
+    <color name="grey_font2">#F3F2F2</color>
+
+
+
+
+    <!--f1ecff-->
+
+
+</resources>

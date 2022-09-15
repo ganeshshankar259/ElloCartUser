@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:id="@+id/mainScrollView"
+    tools:context=".home.homefragment.shopinfotab.ShopeInfo">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="99dp"
+        android:layout_height="93dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="4dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/segoeui"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:text=""
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minimumorder"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/storename"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/segoeuibold"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RatingBar
+        android:id="@+id/rateing"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="5dp"
+        android:clickable="false"
+        android:isIndicator="true"
+        android:progressTint="@color/yellow"
+        android:rating="5.0"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/img"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/storename" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="0"
+            android:textColor="@color/black"
+
+            android:textSize="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/minimumorder"
+            app:layout_constraintEnd_toStartOf="@+id/img"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/rateing"
+            app:layout_constraintTop_toTopOf="@+id/rateing"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+        android:id="@+id/minimumorder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/segoeui"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:paddingLeft="5dp"
+        android:text=""
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/img"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rateing" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:src="@drawable/placeholderello"
+        android:layout_height="180dp"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="3"
+        android:layout_marginTop="20dp"
+        app:sliderStartAutoCycle="true" />
+
+    <FrameLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/montserratbold"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="45dp"
+            android:background="@drawable/borderright"
+            app:layout_constraintBottom_toTopOf="@+id/rateingg"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/inactive"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <RatingBar
+            android:id="@+id/rateingg"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:clickable="false"
+            android:isIndicator="true"
+            android:progressTint="@color/yellow"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/inactive" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="0"
+            android:textColor="@color/black"
+
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/inactive" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/inactive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.70" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/inactive"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.30"
+                    android:fontFamily="@font/montserratbold"
+                    android:gravity="center_horizontal"
+                    android:text="5"
+                    android:textColor="@color/black" />
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="2.20"-->
+                <!--                    android:fontFamily="@font/montserratbold"-->
+
+                <!--                    android:gravity="center"-->
+                <!--                    android:text="90%"-->
+                <!--                    android:textColor="@color/black" />-->
+
+                <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                    android:id="@+id/rate5"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="0.60"
+                    app:rcBackgroundColor="@color/gray"
+                    app:rcBackgroundPadding="2dp"
+                    app:rcMax="100"
+
+                    app:rcProgressColor="@color/yellow"
+                    app:rcRadius="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.10"
+                    android:fontFamily="@font/montserratbold"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:id="@+id/txt5"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp"
+                    android:layout_weight="2.30"
+                    android:fontFamily="@font/montserratbold"
+                    android:gravity="center_horizontal"
+                    android:text="4"
+                    android:textColor="@color/black" />
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="2.20"-->
+                <!--                    android:fontFamily="@font/montserratbold"-->
+
+                <!--                    android:gravity="center"-->
+                <!--                    android:text="4%"-->
+                <!--                    android:textColor="@color/black" />-->
+
+                <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                    android:id="@+id/rate4"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+
+                    android:layout_weight="0.60"
+                    app:rcBackgroundColor="@color/gray"
+                    app:rcBackgroundPadding="2dp"
+                    app:rcMax="100"
+
+                    app:rcProgressColor="@color/yellow"
+                    app:rcRadius="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.10"
+                    android:fontFamily="@font/montserratbold"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txt4"
+                    android:text="0"
+
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp"
+                    android:layout_weight="2.30"
+                    android:fontFamily="@font/montserratbold"
+                    android:gravity="center_horizontal"
+                    android:text="3"
+                    android:textColor="@color/black" />
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="2.20"-->
+                <!--                    android:fontFamily="@font/montserratbold"-->
+
+                <!--                    android:gravity="center"-->
+                <!--                    android:text="4%"-->
+                <!--                    android:textColor="@color/black" />-->
+
+                <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                    android:id="@+id/rate3"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+
+                    android:layout_weight="0.60"
+                    app:rcBackgroundColor="@color/gray"
+                    app:rcBackgroundPadding="2dp"
+                    app:rcMax="100"
+
+
+                    app:rcProgressColor="@color/yellow"
+                    app:rcRadius="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.10"
+                    android:fontFamily="@font/montserratbold"
+                    android:gravity="center_horizontal"
+
+                    android:id="@+id/txt3"
+                    android:text="0"
+
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp"
+                    android:layout_weight="2.30"
+                    android:fontFamily="@font/montserratbold"
+                    android:gravity="center_horizontal"
+                    android:text="2"
+                    android:textColor="@color/black" />
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="2.20"-->
+                <!--                    android:fontFamily="@font/montserratbold"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:text="4%"-->
+                <!--                    android:textColor="@color/black" />-->
+
+                <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                    android:id="@+id/rate2"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.60"
+                    android:layout_marginTop="4dp"
+
+                    app:rcBackgroundColor="@color/gray"
+                    app:rcBackgroundPadding="2dp"
+                    app:rcMax="100"
+
+
+                    app:rcProgressColor="@color/yellow"
+                    app:rcRadius="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.10"
+                    android:fontFamily="@font/montserratbold"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txt2"
+                    android:text="0"
+
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp"
+                    android:layout_weight="2.30"
+                    android:fontFamily="@font/montserratbold"
+                    android:gravity="center_horizontal"
+                    android:text="1"
+                    android:textColor="@color/black" />
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="2.20"-->
+                <!--                    android:fontFamily="@font/montserratbold"-->
+
+                <!--                    android:gravity="center"-->
+                <!--                    android:text="4%"-->
+                <!--                    android:textColor="@color/black" />-->
+
+                <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                    android:id="@+id/rate1"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.60"
+                    android:layout_marginTop="4dp"
+
+                    app:rcBackgroundColor="@color/gray"
+                    app:rcBackgroundPadding="2dp"
+                    app:rcMax="100"
+
+                    app:rcProgressColor="@color/yellow"
+                    app:rcRadius="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.10"
+                    android:fontFamily="@font/montserratbold"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txt1"
+                    android:text="0"
+
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+
+</ScrollView>

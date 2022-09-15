@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginBottom="6dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:weightSum="10"
+        android:paddingLeft="5dp"
+        android:id="@+id/llayout"
+        android:background="@color/white"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:text=""
+                android:textSize="15dp"
+                android:fontFamily="@font/segoeuibold"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/detailtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoeui"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:paddingBottom="10dp"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:padding="1dp"-->
+<!--                    android:src="@drawable/next"-->
+<!--                    android:text=""-->
+<!--                    android:textColor="@color/black"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintHorizontal_bias="0.028"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/amt"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:layout_constraintVertical_bias="0.0" />-->
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

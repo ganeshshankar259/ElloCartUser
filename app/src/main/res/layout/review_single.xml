@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:minHeight="100dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    android:elevation="10dp"
+    android:background="@drawable/ellevationbg"
+    card_view:cardCornerRadius="2dp"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:weightSum="10"
+        android:id="@+id/llayout"
+        android:background="@color/white"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="horizontal">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="80dp"
+    android:layout_weight="0.40"
+    android:maxHeight="80dp"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/gridIconne"
+        android:layout_width="match_parent"
+        android:maxWidth="70dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:clickable="false"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2.10"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:textStyle="bold"
+                android:id="@+id/titlene"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="name"
+                android:textSize="13dp"
+                android:textAllCaps="true"
+                android:fontFamily="@font/segoeuibold"
+                android:textColor="@color/black"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:rating="2.0"
+                android:layout_gravity="left"
+                android:isIndicator="true"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="2dp"
+                android:progressTint="@color/yellow"
+                android:id="@+id/rateing"
+                />
+
+            <TextView
+                android:id="@+id/rewiewdata"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:text="review data"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:fontFamily="@font/segoeui"
+                android:layout_weight="1"
+                android:textSize="11dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_weight="7.50">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/edit_2x"
+        android:visibility="gone"
+        android:id="@+id/edit"
+        />
+</LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

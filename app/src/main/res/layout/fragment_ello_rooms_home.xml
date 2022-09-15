@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ellorooms_new.ElloRoomsHome">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/yellow1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/segoeuibold"
+            android:gravity="center_vertical"
+            android:text="Ello Rooms"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.454" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/CIVprofile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="0dp"
+            android:padding="2dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/profile_placeholder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.952"
+            app:layout_constraintStart_toEndOf="@+id/current"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/header"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/curveborder">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoeuibold"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:text="Book your room at Ellorooms. Save Money and \nStay Happy"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvroom"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                app:cardBackgroundColor="@color/grey_font2"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:text="NEAR LOCATION"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/nearlocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/grey_font2"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/segoeui"
+                        android:hint="Search Anywhere"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="14dp" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                app:cardBackgroundColor="@color/grey_font2"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="7dp"
+                        android:text="From"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/fromdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/grey_font2"
+                        android:drawablePadding="10dp"
+                        android:focusable="false"
+                        android:fontFamily="@font/segoeui"
+                        android:hint="From Date"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingStart="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="14dp" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                app:cardBackgroundColor="@color/grey_font2"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@font/segoeuibold"
+                        android:text="To"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/todate"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="-1dp"
+                        android:layout_marginBottom="3dp"
+                        android:background="@color/grey_font2"
+                        android:drawablePadding="10dp"
+                        android:focusable="false"
+                        android:fontFamily="@font/segoeui"
+                        android:hint="To Date"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingStart="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="14dp" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                app:cardBackgroundColor="@color/grey_font2"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:fontFamily="@font/segoeuibold"
+                            android:maxLines="1"
+                            android:paddingStart="12dp"
+                            android:text="Rooms"
+                            android:textColor="@color/black"
+                            android:textSize="13dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <!--            <TextView-->
+                            <!--                android:layout_width="wrap_content"-->
+                            <!--                android:layout_height="match_parent"-->
+                            <!--                android:text="-"-->
+                            <!--                android:gravity="center"-->
+                            <!--                android:textSize="34dp"-->
+                            <!--                android:layout_margin="5dp"-->
+                            <!--                android:id="@+id/minus"-->
+
+                            <!--                />-->
+
+                            <ImageView
+                                android:id="@+id/room_minus"
+                                android:layout_width="21sp"
+                                android:layout_height="21sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="12dp"
+                                android:gravity="center"
+                                android:src="@drawable/minus_3x" />
+
+                            <TextView
+                                android:id="@+id/room_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/room_minus"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/room_plus"
+                                android:layout_width="21sp"
+                                android:layout_height="21sp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/room_count"
+                                android:gravity="center"
+                                android:src="@drawable/plus_3x" />
+
+
+                            <!--            <TextView-->
+                            <!--                android:layout_width="wrap_content"-->
+                            <!--                android:layout_height="match_parent"-->
+                            <!--                android:text="+"-->
+                            <!--                android:gravity="center"-->
+                            <!--                android:textSize="34dp"-->
+                            <!--                android:layout_margin="5dp"-->
+                            <!--                android:id="@+id/plus"-->
+
+                            <!--                />-->
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/segoeuibold"
+                            android:maxLines="1"
+                            android:paddingStart="12dp"
+                            android:text="Persons"
+                            android:textColor="@color/black"
+                            android:textSize="13dp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+
+                            <!--            <TextView-->
+                            <!--                android:layout_width="wrap_content"-->
+                            <!--                android:layout_height="match_parent"-->
+                            <!--                android:text="-"-->
+                            <!--                android:gravity="center"-->
+                            <!--                android:textSize="34dp"-->
+                            <!--                android:layout_margin="5dp"-->
+                            <!--                android:id="@+id/minus"-->
+
+                            <!--                />-->
+
+                            <ImageView
+                                android:id="@+id/person_minus"
+                                android:layout_width="21sp"
+                                android:layout_height="21sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="12dp"
+                                android:gravity="center"
+                                android:src="@drawable/minus_3x" />
+
+
+                            <TextView
+                                android:id="@+id/person_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="19dp"
+                                android:layout_marginTop="-1dp"
+                                android:layout_toEndOf="@+id/person_minus"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/person_plus"
+                                android:layout_width="21sp"
+                                android:layout_height="21sp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_toEndOf="@+id/person_count"
+                                android:gravity="center"
+                                android:src="@drawable/plus_3x" />
+
+
+                            <!--            <TextView-->
+                            <!--                android:layout_width="wrap_content"-->
+                            <!--                android:layout_height="match_parent"-->
+                            <!--                android:text="+"-->
+                            <!--                android:gravity="center"-->
+                            <!--                android:textSize="34dp"-->
+                            <!--                android:layout_margin="5dp"-->
+                            <!--                android:id="@+id/plus"-->
+
+                            <!--                />-->
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/search_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/btncornorblack"
+                android:gravity="center"
+                android:text="Search"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cvroom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</RelativeLayout>

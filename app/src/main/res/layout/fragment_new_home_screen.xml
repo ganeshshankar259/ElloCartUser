@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:background="@drawable/gradient"
+    tools:context=".home.homefragment.homefragment">
+
+<!--    <com.jama.carouselview.CarouselView-->
+<!--        android:id="@+id/carouselView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:spacing="20" />-->
+
+    <com.jama.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:enableSnapping="true"
+        app:scaleOnScroll="false"
+        app:setAutoPlay="true"
+        app:setAutoPlayDelay="3000"
+        app:carouselOffset="center"
+        app:indicatorAnimationType="drop"
+        app:indicatorRadius="5"
+        app:indicatorPadding="5"
+        app:indicatorSelectedColor="@color/colorAccent"
+        app:indicatorUnselectedColor="@color/colorPrimary"
+        app:size="10"
+        app:spacing="10"
+        app:resource="@layout/center_carousel_item"/>
+</LinearLayout>

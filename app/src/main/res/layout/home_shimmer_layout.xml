@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:background="@color/grayshimmer"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="@color/grayshimmer"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_margin="5dp"
+      android:background="@color/grayshimmer"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="10dp"
+        android:background="@color/grayshimmer"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+        <include layout="@layout/homesingleshimmer" />
+    </LinearLayout>
+
+</LinearLayout>
