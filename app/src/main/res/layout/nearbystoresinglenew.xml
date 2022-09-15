@@ -80,7 +80,7 @@
                         android:layout_marginBottom="15dp"
                         android:layout_toEndOf="@+id/text1"
                         android:text="₹300"
-                        android:textColor="@color/teal_200"
+                        android:textColor="@color/teal_300"
                         android:textSize="14dp"
                         android:textStyle="bold" />
 
@@ -116,7 +116,7 @@
                         android:layout_marginStart="-7dp"
                         android:layout_marginBottom="180dp"
                         android:elevation="10dp"
-                        android:src="@drawable/free_delivery" />
+                        android:src="@drawable/free_delivery_img" />
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
@@ -142,9 +142,6 @@
                                 android:scaleType="fitXY"
                                 android:src="@drawable/ellocart_new" />
 
-
-
-                            ///////
                             <ImageView
                                 android:id="@+id/imgFav"
                                 android:layout_width="28dp"
@@ -156,7 +153,7 @@
                                 android:src="@drawable/active_heart" />
 
                             <androidx.cardview.widget.CardView
-                                android:layout_width="105dp"
+                                android:layout_width="110dp"
                                 android:layout_height="25dp"
                                 android:layout_alignParentStart="true"
                                 android:layout_alignParentBottom="true"
@@ -203,10 +200,10 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_alignParentTop="true"
-                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentBottom="true"
                                         android:layout_marginStart="4dp"
                                         android:layout_marginTop="7dp"
-                                        android:layout_marginEnd="5dp"
+                                        android:layout_marginBottom="7dp"
                                         android:layout_toEndOf="@+id/tvminorder"
                                         android:text="₹200/-"
                                         android:textColor="@color/black"
@@ -256,6 +253,7 @@
                                         android:layout_alignParentBottom="true"
                                         android:layout_marginStart="5dp"
                                         android:layout_marginTop="8dp"
+                                        android:layout_marginEnd="5dp"
                                         android:layout_marginBottom="7dp"
                                         android:layout_toEndOf="@+id/imorder"
                                         android:text="MIN.ORDER"
@@ -287,9 +285,9 @@
                         android:layout_alignParentTop="true"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginStart="40dp"
+                        android:layout_marginStart="25dp"
                         android:layout_marginTop="250dp"
-                        android:layout_marginEnd="40dp"
+                        android:layout_marginEnd="25dp"
                         android:layout_marginBottom="30dp"
                         app:cardCornerRadius="8dp">
 
@@ -300,15 +298,15 @@
 
                             <TextView
                                 android:id="@+id/tvHotelName"
-                                android:layout_width="251dp"
-                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
                                 android:layout_alignParentStart="true"
                                 android:layout_alignParentTop="true"
                                 android:layout_alignParentBottom="true"
                                 android:layout_marginStart="15dp"
-                                android:layout_marginTop="22dp"
-                                android:layout_marginEnd="-20dp"
-                                android:layout_marginBottom="44dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="33dp"
                                 android:layout_toStartOf="@+id/cvRating"
                                 android:text="V.K.BIRYANI CENTER"
                                 android:textColor="@color/black"
@@ -323,7 +321,7 @@
                                 android:layout_alignParentBottom="true"
                                 android:layout_marginStart="50dp"
                                 android:layout_marginEnd="25dp"
-                                android:layout_marginBottom="40dp"
+                                android:layout_marginBottom="45dp"
                                 app:cardBackgroundColor="@color/green1"
                                 app:cardCornerRadius="5dp">
 
@@ -347,12 +345,12 @@
                                         android:textStyle="bold" />
 
                                     <ImageView
-                                        android:layout_width="15dp"
-                                        android:layout_height="1dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
                                         android:layout_alignParentTop="true"
                                         android:layout_alignParentEnd="true"
                                         android:layout_alignParentBottom="true"
-                                        android:layout_margin="9dp"
+                                        android:layout_margin="8dp"
                                         android:layout_toEndOf="@+id/min"
                                         android:src="@drawable/ic_white_star" />
                                 </RelativeLayout>
@@ -362,15 +360,14 @@
                             <LinearLayout
                                 android:id="@+id/ll_offline"
                                 android:layout_width="match_parent"
-                                android:layout_height="39dp"
+                                android:layout_height="30dp"
                                 android:layout_alignParentStart="true"
                                 android:layout_alignParentEnd="true"
                                 android:layout_alignParentBottom="true"
                                 android:layout_marginStart="0dp"
-                                android:layout_marginTop="60dp"
+                                android:layout_marginTop="0dp"
                                 android:layout_marginEnd="0dp"
-                                android:layout_marginBottom="1dp"
-                                android:background="@color/teal_200"
+                                android:background="@color/teal_300"
                                 android:orientation="horizontal">
 
                                 <RelativeLayout
@@ -468,367 +465,367 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:visibility="gone"
-    android:layout_height="wrap_content">
-    <ImageView
-        android:id="@+id/gridIconne"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_gravity="center"
-        android:background="@color/white"
-
-        android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-
-            <TextView
-                android:id="@+id/offerrs"
-                android:layout_width="wrap_content"
-                android:minWidth="115dp"
-                android:paddingRight="10dp"
-                android:paddingLeft="10dp"
-                android:layout_height="33dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/offerbackground"
-                android:fontFamily="@font/segoeuibold"
-                android:gravity="center"
-                android:text=""
-                android:textColor="@color/white"
-                android:textSize="14dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/offerrs1"
-        android:layout_width="wrap_content"
-        android:layout_height="33dp"
-        android:background="#4DE575"
-        android:fontFamily="@font/segoeuibold"
-        android:gravity="center"
-        android:visibility="gone"
-        android:minWidth="115dp"
-        android:layout_marginTop="20dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:text=""
-        android:textColor="@color/black"
-        android:textSize="14dp"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/offerrs" />
-
-
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="60dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/gridIconne"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
 
-        android:orientation="horizontal"
-        android:padding="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <TextView
+            android:id="@+id/offerrs"
+            android:layout_width="wrap_content"
+            android:minWidth="115dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/offerbackground"
+            android:fontFamily="@font/segoeuibold"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/offerrs1"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:background="#4DE575"
+            android:fontFamily="@font/segoeuibold"
+            android:gravity="center"
+            android:visibility="gone"
+            android:minWidth="115dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/offerrs" />
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout3sa"
+            android:id="@+id/constraintLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/radius"
-            android:elevation="10dp"
-            android:foreground="?android:attr/selectableItemBackground"
             android:minHeight="60dp"
+
             android:orientation="horizontal"
             android:padding="4dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            card_view:layout_editor_absoluteX="10dp">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
-            <LinearLayout
-                android:id="@+id/linearlayout22"
-               android:gravity="right"
-                android:minHeight="30dp"
-                android:orientation="horizontal"
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3sa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintEnd_toEndOf="@+id/imageView7"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/radius"
+                android:elevation="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:minHeight="60dp"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                card_view:layout_editor_absoluteX="10dp">
 
-<!--                <View-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="10dp"-->
-<!--                    android:visibility=""-->
-<!--                    android:layout_weight="1"-->
-<!--                    />-->
+                <LinearLayout
+                    android:id="@+id/linearlayout22"
+                    android:gravity="right"
+                    android:minHeight="30dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView7"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <!--                <View-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="10dp"-->
+                    <!--                    android:visibility=""-->
+                    <!--                    android:layout_weight="1"-->
+                    <!--                    />-->
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:id="@+id/freedel"
+                        android:visibility="gone"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/free_delivery"
+                        />
+
+
+                </LinearLayout>
+
+                <!--            <RatingBar-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:clickable="false"-->
+                <!--                android:rating="0.0"-->
+                <!--                android:layout_gravity="left"-->
+                <!--                android:isIndicator="true"-->
+                <!--                style="?android:attr/ratingBarStyleSmall"-->
+                <!--                android:layout_marginBottom="4dp"-->
+                <!--                android:layout_marginTop="2dp"-->
+                <!--                android:progressTint="@color/yellow"-->
+                <!--                android:id="@+id/rateing"-->
+                <!--                />-->
+
                 <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="right"
-                    android:id="@+id/freedel"
-                    android:visibility="gone"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/free_delivery"
-                    />
+                    android:id="@+id/imageView7"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="0dp"
+                    android:padding="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearlayout22" />
+
+                <!--        <ImageView-->
+                <!--            android:id="@+id/imageView12"-->
+                <!--            android:layout_width="20dp"-->
+                <!--            android:layout_height="20dp"-->
+                <!--            android:layout_marginStart="4dp"-->
+                <!--            android:layout_marginTop="4dp"-->
+                <!--            android:padding="5dp"-->
+                <!--            android:src="@drawable/distance_3x"-->
+                <!--            app:layout_constraintStart_toStartOf="parent"-->
+                <!--            app:layout_constraintTop_toBottomOf="@+id/minn" />-->
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_star"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/notaccepting" />
 
 
-            </LinearLayout>
+                <!--        <TextView-->
+                <!--            android:id="@+id/rateingtxt"-->
+                <!--            android:layout_width="0dp"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_marginEnd="4dp"-->
+                <!--            android:background="@color/matgreen"-->
+                <!--            android:fontFamily="@font/segoeuibold"-->
+                <!--            android:gravity="center"-->
+                <!--            android:maxWidth="40dp"-->
+                <!--            android:paddingTop="2dp"-->
+                <!--            android:paddingBottom="2dp"-->
+                <!--            android:text="★ 0.0"-->
+                <!--            android:textColor="@color/white"-->
+                <!--            android:textSize="11dp"-->
+                <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--            app:layout_constraintEnd_toEndOf="parent"-->
+                <!--            app:layout_constraintHorizontal_bias="1.0"-->
+                <!--            app:layout_constraintStart_toStartOf="@+id/guideline5"-->
+                <!--            app:layout_constraintTop_toBottomOf="@+id/imageView7" />-->
 
-            <!--            <RatingBar-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:clickable="false"-->
-            <!--                android:rating="0.0"-->
-            <!--                android:layout_gravity="left"-->
-            <!--                android:isIndicator="true"-->
-            <!--                style="?android:attr/ratingBarStyleSmall"-->
-            <!--                android:layout_marginBottom="4dp"-->
-            <!--                android:layout_marginTop="2dp"-->
-            <!--                android:progressTint="@color/yellow"-->
-            <!--                android:id="@+id/rateing"-->
-            <!--                />-->
-
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_marginTop="0dp"
-                android:padding="5dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearlayout22" />
-
-            <!--        <ImageView-->
-            <!--            android:id="@+id/imageView12"-->
-            <!--            android:layout_width="20dp"-->
-            <!--            android:layout_height="20dp"-->
-            <!--            android:layout_marginStart="4dp"-->
-            <!--            android:layout_marginTop="4dp"-->
-            <!--            android:padding="5dp"-->
-            <!--            android:src="@drawable/distance_3x"-->
-            <!--            app:layout_constraintStart_toStartOf="parent"-->
-            <!--            app:layout_constraintTop_toBottomOf="@+id/minn" />-->
-
-            <ImageView
-                android:id="@+id/imageView13"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginLeft="4dp"
-                android:layout_marginTop="5dp"
-                android:padding="2dp"
-                android:src="@drawable/ic_star"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/notaccepting" />
+                <!--        <TextView-->
+                <!--            android:id="@+id/addressne"-->
+                <!--            android:layout_width="0dp"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_margin="4dp"-->
+                <!--            android:layout_marginTop="5dp"-->
+                <!--            android:layout_marginBottom="5dp"-->
+                <!--            android:layout_weight="1"-->
+                <!--            android:ellipsize="end"-->
+                <!--            android:fontFamily="@font/segoeuibold"-->
+                <!--            android:gravity="center|start"-->
+                <!--            android:maxLines="2"-->
+                <!--            android:paddingTop="2dp"-->
+                <!--            android:paddingBottom="3dp"-->
+                <!--            android:text="address"-->
+                <!--            android:textSize="11dp"-->
+                <!--            app:layout_constraintEnd_toStartOf="@+id/guideline5"-->
+                <!--            app:layout_constraintHorizontal_bias="0.0"-->
+                <!--            app:layout_constraintStart_toStartOf="parent"-->
+                <!--            app:layout_constraintTop_toBottomOf="@+id/titlene" />-->
 
 
-            <!--        <TextView-->
-            <!--            android:id="@+id/rateingtxt"-->
-            <!--            android:layout_width="0dp"-->
-            <!--            android:layout_height="wrap_content"-->
-            <!--            android:layout_marginEnd="4dp"-->
-            <!--            android:background="@color/matgreen"-->
-            <!--            android:fontFamily="@font/segoeuibold"-->
-            <!--            android:gravity="center"-->
-            <!--            android:maxWidth="40dp"-->
-            <!--            android:paddingTop="2dp"-->
-            <!--            android:paddingBottom="2dp"-->
-            <!--            android:text="★ 0.0"-->
-            <!--            android:textColor="@color/white"-->
-            <!--            android:textSize="11dp"-->
-            <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-            <!--            app:layout_constraintEnd_toEndOf="parent"-->
-            <!--            app:layout_constraintHorizontal_bias="1.0"-->
-            <!--            app:layout_constraintStart_toStartOf="@+id/guideline5"-->
-            <!--            app:layout_constraintTop_toBottomOf="@+id/imageView7" />-->
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:src="@drawable/clock"
+                    app:layout_constraintStart_toEndOf="@+id/min1"
+                    app:layout_constraintTop_toBottomOf="@+id/notaccepting" />
 
-            <!--        <TextView-->
-            <!--            android:id="@+id/addressne"-->
-            <!--            android:layout_width="0dp"-->
-            <!--            android:layout_height="wrap_content"-->
-            <!--            android:layout_margin="4dp"-->
-            <!--            android:layout_marginTop="5dp"-->
-            <!--            android:layout_marginBottom="5dp"-->
-            <!--            android:layout_weight="1"-->
-            <!--            android:ellipsize="end"-->
-            <!--            android:fontFamily="@font/segoeuibold"-->
-            <!--            android:gravity="center|start"-->
-            <!--            android:maxLines="2"-->
-            <!--            android:paddingTop="2dp"-->
-            <!--            android:paddingBottom="3dp"-->
-            <!--            android:text="address"-->
-            <!--            android:textSize="11dp"-->
-            <!--            app:layout_constraintEnd_toStartOf="@+id/guideline5"-->
-            <!--            app:layout_constraintHorizontal_bias="0.0"-->
-            <!--            app:layout_constraintStart_toStartOf="parent"-->
-            <!--            app:layout_constraintTop_toBottomOf="@+id/titlene" />-->
+                <TextView
+                    android:id="@+id/min1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/segoeuibold"
+                    android:gravity="left"
+                    android:maxWidth="80dp"
+                    android:maxLines="1"
+                    android:paddingRight="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="11dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+                    app:layout_constraintStart_toEndOf="@+id/imageView13"
+                    app:layout_constraintTop_toTopOf="@+id/imageView13" />
 
 
-            <ImageView
-                android:id="@+id/imageView14"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="5dp"
-                android:padding="2dp"
-                android:src="@drawable/clock"
-                app:layout_constraintStart_toEndOf="@+id/min1"
-                app:layout_constraintTop_toBottomOf="@+id/notaccepting" />
+                <TextView
+                    android:id="@+id/titlene"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/segoeuibold"
+                    android:gravity="center|start"
+                    android:maxLines="2"
+                    android:text="name"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView7"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearlayout22" />
+
+                <TextView
+                    android:id="@+id/timee"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/segoeuibold"
+                    android:gravity="left"
+                    android:maxWidth="80dp"
+                    android:maxLines="1"
+                    android:paddingRight="10dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="11dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+                    app:layout_constraintEnd_toStartOf="@+id/minn"
+                    app:layout_constraintStart_toEndOf="@+id/imageView14"
+                    app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+                <!--        <TextView-->
+                <!--            android:id="@+id/kmne"-->
+                <!--            android:layout_width="70dp"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_marginTop="8dp"-->
+                <!--            android:fontFamily="@font/segoeuibold"-->
+                <!--            android:gravity="left"-->
+                <!--            android:text="7km"-->
+                <!--            android:textSize="12dp"-->
+                <!--            app:layout_constraintStart_toEndOf="@+id/imageView12"-->
+                <!--            app:layout_constraintTop_toBottomOf="@+id/minn" />-->
+
+                <TextView
+                    android:id="@+id/minn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/segoeuibold"
+                    android:gravity="right"
+
+                    android:text="minimum order : "
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+                <TextView
+                    android:id="@+id/notaccepting"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+
+                    android:fontFamily="@font/segoeuibold"
+                    android:gravity="center|start"
+                    android:maxLines="2"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:text="Currently Not Accepting Orders"
+                    android:textColor="#ed1c24"
+
+                    android:textSize="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.50" />
+
+                <!--        <TextView-->
+                <!--            android:id="@+id/rate"-->
+                <!--            android:layout_width="45dp"-->
+                <!--            android:layout_height="16dp"-->
+                <!--            android:layout_margin="3dp"-->
+                <!--            android:background="@drawable/btncornorgreen"-->
+                <!--            android:fontFamily="@font/segoeuibold"-->
+                <!--            android:gravity="center"-->
+                <!--            android:text=""-->
+                <!--            android:visibility="gone"-->
+                <!--            android:textColor="@color/white"-->
+                <!--            android:textSize="14dp"-->
+                <!--            card_view:layout_editor_absoluteX="294dp"-->
+                <!--            card_view:layout_editor_absoluteY="60dp" />-->
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
-                android:id="@+id/min1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:ellipsize="end"
-                android:fontFamily="@font/segoeuibold"
-                android:gravity="left"
-                android:maxWidth="80dp"
-                android:maxLines="1"
-                android:paddingRight="5dp"
-                android:text=""
-                android:textColor="@color/black"
-                android:textSize="11dp"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView13"
-                app:layout_constraintStart_toEndOf="@+id/imageView13"
-                app:layout_constraintTop_toTopOf="@+id/imageView13" />
-
-
-            <TextView
-                android:id="@+id/titlene"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:ellipsize="end"
-                android:fontFamily="@font/segoeuibold"
-                android:gravity="center|start"
-                android:maxLines="2"
-                android:text="name"
-                android:textColor="@color/black"
-                android:textSize="13dp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/imageView7"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearlayout22" />
-
-            <TextView
-                android:id="@+id/timee"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:ellipsize="end"
-                android:fontFamily="@font/segoeuibold"
-                android:gravity="left"
-                android:maxWidth="80dp"
-                android:maxLines="1"
-                android:paddingRight="10dp"
-                android:text=""
-                android:textColor="@color/black"
-                android:textSize="11dp"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView14"
-                app:layout_constraintEnd_toStartOf="@+id/minn"
-                app:layout_constraintStart_toEndOf="@+id/imageView14"
-                app:layout_constraintTop_toTopOf="@+id/imageView14" />
-
-            <!--        <TextView-->
-            <!--            android:id="@+id/kmne"-->
-            <!--            android:layout_width="70dp"-->
-            <!--            android:layout_height="wrap_content"-->
-            <!--            android:layout_marginTop="8dp"-->
-            <!--            android:fontFamily="@font/segoeuibold"-->
-            <!--            android:gravity="left"-->
-            <!--            android:text="7km"-->
-            <!--            android:textSize="12dp"-->
-            <!--            app:layout_constraintStart_toEndOf="@+id/imageView12"-->
-            <!--            app:layout_constraintTop_toBottomOf="@+id/minn" />-->
-
-            <TextView
-                android:id="@+id/minn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:layout_marginEnd="8dp"
-                android:fontFamily="@font/segoeuibold"
-                android:gravity="right"
-
-                android:text="minimum order : "
-                android:textColor="@color/black"
-                android:textSize="12dp"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView14"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/imageView14" />
-
-            <TextView
-                android:id="@+id/notaccepting"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:ellipsize="end"
-
-                android:fontFamily="@font/segoeuibold"
-                android:gravity="center|start"
-                android:maxLines="2"
-                android:paddingTop="2dp"
-                android:paddingBottom="2dp"
-                android:text="Currently Not Accepting Orders"
-                android:textColor="#ed1c24"
-
-                android:textSize="12dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView7" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.50" />
-
-            <!--        <TextView-->
-            <!--            android:id="@+id/rate"-->
-            <!--            android:layout_width="45dp"-->
-            <!--            android:layout_height="16dp"-->
-            <!--            android:layout_margin="3dp"-->
-            <!--            android:background="@drawable/btncornorgreen"-->
-            <!--            android:fontFamily="@font/segoeuibold"-->
-            <!--            android:gravity="center"-->
-            <!--            android:text=""-->
-            <!--            android:visibility="gone"-->
-            <!--            android:textColor="@color/white"-->
-            <!--            android:textSize="14dp"-->
-            <!--            card_view:layout_editor_absoluteX="294dp"-->
-            <!--            card_view:layout_editor_absoluteY="60dp" />-->
-
-
+                android:id="@+id/textView10"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/promo_wall"
+                android:elevation="15dp"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:text="3000"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout3sa"
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/promo_wall"
-            android:elevation="15dp"
-            android:gravity="center"
-            android:paddingBottom="5dp"
-            android:text="300"
-            android:visibility="gone"
-            android:textColor="@color/white"
-            app:layout_constraintStart_toStartOf="@+id/constraintLayout3sa"
-            app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>
