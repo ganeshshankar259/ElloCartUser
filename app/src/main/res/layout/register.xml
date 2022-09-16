@@ -193,20 +193,20 @@
             android:textColorLink="#0000EE"
             android:textSize="12dp" />
 
-        <Button
-            android:id="@+id/login"
-            android:layout_width="160dp"
-            android:layout_height="40dp"
-            android:paddingRight="30dp"
-            android:layout_marginTop="20dp"
-            android:paddingLeft="30dp"
-            android:layout_gravity="center"
-            android:text="Register"
-            android:background="@drawable/btncornor"
-            android:textColor="@color/black"
-            android:textSize="18dp"
-            android:fontFamily="@font/segoeuibold"
-            />
+<!--        <Button-->
+<!--            android:id="@+id/login"-->
+<!--            android:layout_width="160dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:paddingRight="30dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:paddingLeft="30dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="Register"-->
+<!--            android:background="@drawable/btncornor"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="18dp"-->
+<!--            android:fontFamily="@font/segoeuibold"-->
+<!--            />-->
 
 
     </LinearLayout>

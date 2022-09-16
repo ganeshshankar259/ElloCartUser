@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:weightSum="3"
-        android:background="@color/yellow"
+        android:background="@color/yellow1"
         android:orientation="horizontal">
 
         <ImageView
@@ -292,7 +292,7 @@
             <Button
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-               android:background="@drawable/ic_minus"
+               android:background="@drawable/minus_3x"
                 android:id="@+id/minus"
                 android:fontFamily="@font/segoeuibold"
                 android:gravity="center"
@@ -317,7 +317,7 @@
             <Button
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:background="@drawable/ic_plus"
+                android:background="@drawable/plus_3x"
                 android:id="@+id/plus"
                 android:gravity="center"
                 android:textSize="20dp"

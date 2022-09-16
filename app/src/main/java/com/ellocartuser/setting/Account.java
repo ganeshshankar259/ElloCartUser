@@ -58,12 +58,12 @@ public class Account extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    RelativeLayout rlogin;
+    RelativeLayout rlogin,myprofile,myorder,allindia,elloservices,ellorooms;
     RelativeLayout rlogout;
     ImageView imageback,cam;
-
-    LinearLayout myprofile,myorder,wallet,allindia,about,support,joinseller,deliveryjoin,ellosales,faqs,terms,privacy,shareapp,logout,login,ellorooms,elloservices;
+    LinearLayout about,wallet,support,ellosales,joinseller,deliveryjoin,faqs,terms,privacy,logout,login,shareapp;
     CircleImageView userimg;
+
 
 
     // TODO: Rename and change types of parameters

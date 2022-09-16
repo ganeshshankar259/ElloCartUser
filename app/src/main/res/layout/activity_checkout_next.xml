@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="@color/black3"
     tools:context=".cart.CheckoutNext">
 
 <!--    <LinearLayout-->
@@ -43,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:background="@color/yellow"
+        android:background="@color/yellow1"
         android:weightSum="3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,12 +51,13 @@
 
         <ImageView
             android:id="@+id/imageback"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
             android:layout_weight="0.5"
             android:padding="5dp"
-            android:src="@drawable/back"
+            android:src="@drawable/new_back_left_arrow"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -69,12 +70,11 @@
             android:fontFamily="@font/segoeui"
             android:gravity="center_vertical"
             android:text="Select Address"
-
-            android:textColor="@color/white"
-            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"
+            android:textSize="14dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/currentlocationtxt"
             app:layout_constraintStart_toEndOf="@+id/imageback"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -346,10 +346,9 @@
         android:id="@+id/carddd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:elevation="20dp"
-        app:cardElevation="20dp"
+        android:elevation="00dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/black3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top">
@@ -381,24 +380,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView222">
 
                 <CheckBox
                     android:id="@+id/addr_local"
                     android:layout_width="40dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_weight="1.10"
+                    android:layout_height="40dp"
                     android:button="@drawable/checkout_custom"
+                    android:layout_margin="10dp"
                     android:checked="true"
-                    android:fontFamily="@font/segoeuibold"
-                    android:gravity="center"
-                    android:maxWidth="90dp"
-                    android:text="ONLINE"
-                    android:textAllCaps="true"
-                    android:textColor="@color/white"
-                    android:textSize="15dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -409,7 +401,6 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/segoeuibold"
                     android:text="Local Address"
-                    android:textAllCaps="true"
                     android:textColor="@color/black"
                     android:textSize="13dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -426,17 +417,22 @@
 
                 <Button
                     android:id="@+id/addr_local_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="33dp"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="center"
                     android:background="@drawable/btncornorcod"
                     android:padding="8dp"
                     android:text="Add Address"
-                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.644"
                     app:layout_constraintStart_toStartOf="@+id/guide1"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.4" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -445,23 +441,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
 
                 <CheckBox
                     android:id="@+id/addr_friend"
                     android:layout_width="40dp"
-                    android:layout_height="50dp"
+                    android:layout_height="40dp"
                     android:layout_marginLeft="15dp"
                     android:layout_weight="1.10"
                     android:button="@drawable/checkout_custom"
                     android:fontFamily="@font/segoeuibold"
-                    android:gravity="center"
-                    android:maxWidth="90dp"
-                    android:text="ONLINE"
-                    android:textAllCaps="true"
-                    android:textColor="@color/white"
-                    android:textSize="15dp"
+                    android:layout_margin="10dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -487,20 +479,25 @@
                     android:orientation="vertical"
                     app:layout_constraintGuide_percent="0.60" />
 
+
                 <Button
                     android:id="@+id/addr_friend_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="33dp"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="center"
                     android:background="@drawable/btncornorcod"
                     android:padding="8dp"
                     android:text="Add Address"
-                    android:visibility="gone"
-                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/guide"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintHorizontal_bias="0.644"
+                    app:layout_constraintStart_toStartOf="@+id/guide"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.36" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -575,17 +572,18 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="90dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-android:elevation="20dp"
+android:elevation="0dp"
         android:id="@+id/cardd"
-app:cardElevation="20dp"
+app:cardElevation="0dp"
         >
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/black3"
         >
 
         <TextView
@@ -593,30 +591,30 @@ app:cardElevation="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="10dp"
-            android:text="Total"
-            android:textAllCaps="true"
+            android:layout_marginTop="30dp"
+            android:text="Total :"
             android:textColor="@color/black"
             android:fontFamily="@font/segoeuibold"
-
-            android:textSize="12dp"
+            android:textSize="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
 
         <TextView
             android:id="@+id/amt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text=""
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="30dp"
             android:fontFamily="@font/segoeuibold"
+            android:text=""
             android:textAllCaps="true"
             android:textColor="@color/black"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="16dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline5"
-            app:layout_constraintStart_toStartOf="@+id/textView22"
-            app:layout_constraintTop_toBottomOf="@+id/textView22" />
-
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView22"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline5"
@@ -625,19 +623,45 @@ app:cardElevation="20dp"
             android:orientation="vertical"
             app:layout_constraintGuide_begin="196dp" />
 
-        <Button
-            android:id="@+id/continuebtn"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:height="40dp"
-            android:background="@drawable/ic_resource_continue"
-            android:fontFamily="@font/segoeuibold"
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/guideline5"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_max="160dp" />
+            app:layout_constraintStart_toEndOf="@+id/amt"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                app:cardBackgroundColor="@color/yellow1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp">
+
+                        <Button
+                            android:id="@+id/continuebtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:height="40dp"
+                            android:background="@color/yellow1"
+                            android:fontFamily="@font/segoeuibold"
+                            android:gravity="center"
+                            android:text="CONTINUE"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

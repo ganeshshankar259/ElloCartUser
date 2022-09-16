@@ -133,7 +133,7 @@
                     <Button
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:background="@drawable/ic_minus"
+                        android:background="@drawable/minus_3x"
                         android:id="@+id/minus"
                         android:gravity="center"
                         android:layout_gravity="center"
@@ -160,7 +160,7 @@
                     <Button
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:background="@drawable/ic_plus"
+                        android:background="@drawable/plus_3x"
                         android:id="@+id/plus"
                         android:gravity="center"
                         android:fontFamily="@font/segoeuibold"

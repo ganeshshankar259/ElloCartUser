@@ -290,7 +290,7 @@ public class NearByStoreAdapter extends RecyclerView.Adapter<NearByStoreAdapter.
              tvAmount=itemView.findViewById(R.id.tvAmount);
              tvHotelName=itemView.findViewById(R.id.tvHotelName);
              ll_offline=itemView.findViewById(R.id.ll_offline);
-            ll_promo=itemView.findViewById(R.id.ll_promo);
+// ///////////////////////////////////////////////////////////////////////////      ll_promo=itemView.findViewById(R.id.ll_promo);
             cvRating=itemView.findViewById(R.id.cvRating);
 
 
